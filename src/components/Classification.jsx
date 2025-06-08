@@ -33,7 +33,7 @@ const Classification = () => {
       else payload.image = imageInput;
 
       const { data } = await axios.post(
-        'https://safenet-api-production.up.railway.app',
+        'https://safenet-api-production.up.railway.app/classify',
         payload
       );
 
